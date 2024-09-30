@@ -1,0 +1,56 @@
+1. Anforderung: Fotos hochladen
+
+Beschreibung: Der Benutzer soll in der Lage sein, Bilder auf die Plattform hochzuladen und sie anderen Nutzern zugänglich zu machen.
+
+    Funktionale Anforderungen:
+        FR1.1: Der Benutzer soll Bilder in den Formaten JPEG, PNG und GIF hochladen können.
+        FR1.2: Die maximale Dateigröße pro Bild beträgt 10 MB.
+        FR1.3: Der Benutzer soll beim Hochladen eines Bildes eine Bildbeschreibung (maximal 500 Zeichen) hinzufügen können.
+        FR1.4: Der Benutzer soll mehrere Bilder gleichzeitig hochladen können (maximal 10 Bilder pro Upload).
+        FR1.5: Das System soll eine Fortschrittsanzeige für den Upload der Bilder bereitstellen.
+        FR1.6: Das System soll automatisch eine Miniaturvorschau der hochgeladenen Bilder anzeigen.
+
+    Nicht-funktionale Anforderungen:
+        NFR1.1: Der Upload-Prozess darf nicht länger als 5 Sekunden pro Bild (bei einer durchschnittlichen Dateigröße von 5 MB) dauern.
+        NFR1.2: Die Plattform muss sicherstellen, dass hochgeladene Bilder den Datenschutzbestimmungen entsprechen (z. B. DSGVO).
+
+2. Anforderung: Profil erstellen
+
+Beschreibung: Der Benutzer soll die Möglichkeit haben, ein persönliches Profil zu erstellen, um sich auf der Plattform zu präsentieren und mit anderen Nutzern zu interagieren.
+
+    Funktionale Anforderungen:
+        FR2.1: Der Benutzer soll ein Profilbild hochladen können.
+        FR2.2: Der Benutzer soll grundlegende Informationen angeben können (Name, E-Mail, Geburtsdatum, Ort).
+        FR2.3: Der Benutzer soll eine kurze Selbstbeschreibung (maximal 300 Zeichen) in seinem Profil hinzufügen können.
+        FR2.4: Das System soll dem Benutzer die Möglichkeit bieten, Privatsphäre-Einstellungen für das Profil festzulegen (öffentlich, nur Freunde, privat).
+        FR2.5: Das Profil soll über eine Übersicht der hochgeladenen Bilder und Aktivitäten verfügen.
+    Nicht-funktionale Anforderungen:
+        NFR2.1: Das Erstellen eines Profils darf nicht mehr als 2 Minuten in Anspruch nehmen.
+        NFR2.2: Das Profil muss auf mobilen Geräten sowie Desktop-Geräten voll funktionsfähig sein (Responsive Design).
+
+3. Anforderung: Kommentarfunktion
+
+Beschreibung: Der Benutzer soll die Möglichkeit haben, zu Posts, Bildern und anderen Inhalten Kommentare zu schreiben.
+
+    Funktionale Anforderungen:
+        FR3.1: Der Benutzer soll Kommentare zu Beiträgen und Bildern anderer Nutzer hinzufügen können.
+        FR3.2: Der Benutzer soll eigene Kommentare bearbeiten und löschen können.
+        FR3.3: Das System soll maximal 500 Zeichen pro Kommentar erlauben.
+        FR3.4: Das System soll Benachrichtigungen senden, wenn ein Kommentar zu einem eigenen Beitrag hinzugefügt wird.
+    Nicht-funktionale Anforderungen:
+        NFR3.1: Kommentare müssen in Echtzeit (maximale Verzögerung 2 Sekunden) angezeigt werden.
+        NFR3.2: Die Kommentarfunktion muss sicherstellen, dass keine beleidigenden oder unangemessenen Inhalte gepostet werden (automatische Filter und manuelle Moderation).
+
+4. Anforderung: Like-Funktion
+
+Beschreibung: Der Benutzer soll die Möglichkeit haben, Beiträge, Bilder und Kommentare zu „liken“.
+
+    Funktionale Anforderungen:
+        FR4.1: Der Benutzer soll Beiträge, Bilder und Kommentare durch einen „Like“-Button positiv bewerten können.
+        FR4.2: Der Benutzer soll einen einmal vergebenen Like wieder zurücknehmen können.
+        FR4.3: Die Anzahl der Likes pro Beitrag, Bild oder Kommentar soll sichtbar sein.
+        FR4.4: Das System soll Benachrichtigungen senden, wenn ein Beitrag oder Bild geliked wird.
+
+    Nicht-funktionale Anforderungen:
+        NFR4.1: Likes sollen in Echtzeit aktualisiert werden (maximale Verzögerung 2 Sekunden).
+        NFR4.2: Die Like-Funktion muss sowohl auf mobilen als auch auf Desktop-Geräten ohne Verzögerung funktionieren.
