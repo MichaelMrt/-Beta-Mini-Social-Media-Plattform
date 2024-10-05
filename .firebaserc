@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "betasocialmediaplattform-84807"
-  }
+    "default": "betasocialmediaplattform-84807",
+    "prod": "betasocialmediaplattform-84807",
+    "dev": "betasocialmedia-dev"
+  },
+  "targets": {},
+  "etags": {}
 }
