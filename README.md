@@ -11,6 +11,8 @@ Projektmail: betasocialmediaplattform@gmail.com
 * Projekt klonen `git clone https://github.com/MichaelMrt/Beta-Mini-Social-Media-Plattform.git`
 * Firebase cli installieren mit `npm install -g firebase-tools`
 * Einloggen mit `firebase login`
+* Zum Projektordner gehen `cd /path/to/project`
+* config.js Datei erstellen mit den benötigten API-Keys
 * Projekt lokal hosten mit `firebase serve`
 
 Bei Commits:

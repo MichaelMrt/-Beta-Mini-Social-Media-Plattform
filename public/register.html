@@ -19,7 +19,7 @@
     <script defer src="/__/firebase/10.14.0/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/10.14.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/10.14.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.14.0/firebase-performance-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.14.0/firebase-performance-compat.js"></script> -->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -48,10 +48,13 @@
                     <label for="confirm-password">Passwort bestätigen</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
                 </div>
-                <button type="submit">Registrieren</button>
             </form>
+            <button type="button" id="registerbutton">Registrieren</button>
+            <button>Log in mit Google</button>
+
             <p class="login-link">Bereits einen Account? <a href="index.html">Logge dich hier ein</a></p>
         </div>
     </div>
+    <script type="module" src="register.js"></script>
 </body>
 </html>

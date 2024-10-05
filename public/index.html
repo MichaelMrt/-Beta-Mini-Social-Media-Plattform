@@ -18,7 +18,7 @@
     <script defer src="/__/firebase/10.14.0/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/10.14.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/10.14.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.14.0/firebase-performance-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.14.0/firebase-performance-compat.js"></script> -->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -41,13 +41,14 @@
                   <input type="password" id="password" name="password" required>
               </div>
               <button type="submit">Einloggen</button>
+              <button>Log in mit Google</button>
           </form>
           <p class="register-link">Noch keinen Account? <a href="register.html">Registriere dich hier</a></p>
       </div>
   </div>
 
 
-    <script src="app.js">
+    <script type="module" src="firebase.js">
 
     </script>
   </body>
