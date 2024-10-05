@@ -8,7 +8,7 @@ Projektmail: betasocialmediaplattform@gmail.com
 
 ## Setup
 * [Node.js](https://nodejs.org/en) installieren
-* Projekt klonen `git clone https://github.com/MichaelMrt/spyfall.git`
+* Projekt klonen `git clone https://github.com/MichaelMrt/Beta-Mini-Social-Media-Plattform.git`
 * Firebase cli installieren mit `npm install -g firebase-tools`
 * Einloggen mit `firebase login`
 * Projekt lokal hosten mit `firebase serve`
