@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js';
-import { auth } from "./firebase.js";
+import { auth } from "../firebase.js";
 
 
 // Create an account with email and password
@@ -19,21 +19,23 @@ document.getElementById('registerbutton').addEventListener("click", () => {
             // Benutzerprofil aktualisieren
              updateProfile(user, {
                 displayName: username
-            });
-            console.log("Profil erfolgreich aktualisiert:", user.displayName);
-            console.log(username);
+            })
+            .then(()=>{
+              console.log("Profil erfolgreich aktualisiert:", user.displayName);
+              console.log(username);
+            });               
         } catch (error) {
             console.error("Fehler beim Aktualisieren des Profils:", error);
         }
-
         console.log("Erfolgreich registriert");
         console.log(user);
         console.log(user.displayName);
+        window.location.href = "/html/logged_in.html";
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(error);
+        console.log(errorCode);
         console.log(errorMessage);
         // ..
       });
@@ -53,12 +55,12 @@ signInWithEmailAndPassword(auth, email, password)
     // Signed in 
     const user = userCredential.user;
     console.log("Eingeloggt als: "+user.email);
-    window.location.href = "logged_in.html";
+    window.location.href = "/html/logged_in.html";
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(error);
+    console.log(errorCode);
     console.log(errorMessage);
   });
 
