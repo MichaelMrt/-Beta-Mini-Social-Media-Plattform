@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ß (Beta) - Registrieren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.14.0/firebase-remote-config-compat.js"></script>
+    <!-- <script defer src="/__/firebase/10.14.0/firebase-performance-compat.js"></script> -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h1>Registriere dich bei ß (Beta)</h1>
+            <p>Erstelle einen neuen Account</p>
+            <form action="welcome.html" method="POST">
+                <div class="input-group">
+                    <label for="username">Benutzername</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Passwort</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Passwort bestätigen</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </form>
+            <button type="button" id="registerbutton">Registrieren</button>
+            <button>Log in mit Google</button>
+
+            <p class="login-link">Bereits einen Account? <a href="index.html">Logge dich hier ein</a></p>
+        </div>
+    </div>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
