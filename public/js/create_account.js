@@ -53,7 +53,6 @@ async function username_available(username){
     //username is available 
     return true; 
   }else{
-    console.log(usersSnapshot);
     //username is not available
     return false;
   }
