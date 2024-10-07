@@ -8,8 +8,9 @@ document.getElementById('registerbutton').addEventListener("click", () => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    if(!username_exists(username)){
-      createUserWithEmailAndPassword(auth, email, password)
+    username_available(username).then((available) =>{
+      if(available==true){
+        createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
@@ -21,7 +22,10 @@ document.getElementById('registerbutton').addEventListener("click", () => {
             console.log(error.code);
             console.log(error.message);
       });
-    }        
+      }else{
+        console.log("Nutzername ist schon vergeben");
+      } 
+    } );      
     });
 
 // Benutzerprofil aktualisieren
@@ -40,14 +44,17 @@ function updateUserProfileName(user, username){
   );               
 } 
 
-async function username_exists(username){
+async function username_available(username){
   const usersCol = collection(db, 'users');
   const q = query(usersCol, where('username', '==', username));
+  console.log
   const usersSnapshot = await getDocs(q);
-  if (usersSnapshot.empty==false) {
-    console.log("Nutzername wird schon verwendet!");
+  if (usersSnapshot.empty==true) {
+    //username is available 
     return true; 
   }else{
+    console.log(usersSnapshot);
+    //username is not available
     return false;
   }
 }
