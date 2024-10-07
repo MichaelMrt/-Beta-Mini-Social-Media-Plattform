@@ -18,11 +18,8 @@ document.getElementById('registerbutton').addEventListener("click", () => {
           })
           .catch((error) => {
             console.log("Nutzer konnte nicht erstellt werden");
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorCode);
-            console.log(errorMessage);
-            // ..
+            console.log(error.code);
+            console.log(error.message);
       });
     }        
     });
